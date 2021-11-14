@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"lcd_tutorial\startup_stm32f072xb.o"
+"lcd_tutorial\lcd.o"
+"lcd_tutorial\main.o"
+"lcd_tutorial\stm32f0xx_it.o"
+"lcd_tutorial\stm32f0xx_hal_msp.o"
+"lcd_tutorial\stm32f0xx_hal_tim.o"
+"lcd_tutorial\stm32f0xx_hal_tim_ex.o"
+"lcd_tutorial\stm32f0xx_hal_rcc.o"
+"lcd_tutorial\stm32f0xx_hal_rcc_ex.o"
+"lcd_tutorial\stm32f0xx_hal.o"
+"lcd_tutorial\stm32f0xx_hal_i2c.o"
+"lcd_tutorial\stm32f0xx_hal_i2c_ex.o"
+"lcd_tutorial\stm32f0xx_hal_gpio.o"
+"lcd_tutorial\stm32f0xx_hal_dma.o"
+"lcd_tutorial\stm32f0xx_hal_cortex.o"
+"lcd_tutorial\stm32f0xx_hal_pwr.o"
+"lcd_tutorial\stm32f0xx_hal_pwr_ex.o"
+"lcd_tutorial\stm32f0xx_hal_flash.o"
+"lcd_tutorial\stm32f0xx_hal_flash_ex.o"
+"lcd_tutorial\stm32f0xx_hal_exti.o"
+"lcd_tutorial\system_stm32f0xx.o"
+--strict --scatter "LCD_Tutorial\LCD_Tutorial.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_Tutorial.map" -o LCD_Tutorial\LCD_Tutorial.axf
